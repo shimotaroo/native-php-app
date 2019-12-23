@@ -1,0 +1,871 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #444;
+    line-height: 150%;
+    font-family: 'Noto Sans JP', sans-serif;
+    
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*アイコン*/
+i {
+    margin-right: 7px;
+}
+
+/*=============================
+ヘッダー　タイトル
+=============================*/
+
+header {
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    margin: 0 auto 80px;
+    border-bottom: 4px solid #444;
+}
+
+header h1 {
+    float: left;
+    text-align: center;
+    font-size: 32px;
+    line-height: 80px;
+    margin: 0;
+    padding-left: 20px;    
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 1px;
+}
+
+header h1 a span {
+    color: #6c3;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #444;
+}
+
+/*=============================
+ヘッダー　ナビゲーション
+=============================*/
+
+#top-nav {
+    float: right;
+    width: 500px;
+    position: relative;
+}
+
+#top-nav ul {
+    list-style: none;
+    height: 80px;
+    line-height: 80px;
+    margin:0;
+    position: absolute ;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#top-nav ul li {
+    float: right;
+    margin-right: 20px;
+}
+
+#top-nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-size: 20px;
+}
+
+#top-nav ul li:first-child a {
+    padding: 10px 15px;
+    background: #00a1e9;
+    color: #fff;
+}
+
+#top-nav ul li:first-child a:hover {
+    color: #00a1e9;
+    background: #fff;
+    border: 2px solid #00a1e9;
+    padding: 8px 13px;
+}
+
+#top-nav ul li.mypage a {
+    padding: 10px 15px;
+    background: #6c3;
+    color: #fff;
+}
+
+
+#top-nav ul li.mypage a:hover {
+    color: #6c3;
+    border: 2px solid #6c3;
+
+}
+
+
+
+
+/*=============================
+レイアウト
+=============================*/
+
+.site-width {
+    margin: 0 auto;
+    width: 980px;
+}
+
+/*=============================
+ボタン
+=============================*/
+
+/*=============================
+メイン（トップページ）
+=============================*/
+
+#main .main-explain-container {
+    margin-bottom: 40px;
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*KoSoDATEは〜*/
+#main h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#main h2 span {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+/*苦労したこと〜*/
+#main .main-explain {
+    margin-bottom: 60px;
+}
+
+#main .main-explain-2 {
+    margin-bottom: 20px;
+}
+
+#main .main-signup  {
+    padding: 15px 20px;
+    background: #00a1e9;
+    color: #fff;
+    width: 200px;
+    margin: 0 auto 20px;
+}
+
+
+#main .main-signup:hover {
+    padding: 13px 18px;
+    border: 2px solid #00a1e9;
+    background: #fff;
+    cursor: pointer;
+}
+#main .main-login  {
+    padding: 15px 20px;
+    background: #f03;
+    color: #fff;
+    width: 200px;
+    margin: 0 auto 80px;
+}
+
+#main .main-login:hover {
+    padding: 13px 18px;
+    border: 2px solid #f03;
+    background: #fff;
+    cursor: pointer;
+}
+
+.main-explain-container a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.main-pic-container {
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+    margin-bottom: 40px;
+}
+
+.choice-text {
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 20px;
+    background: #444;
+    color: #fff;
+    width: 300px;
+    margin: 0 auto 50px;
+}
+
+.main-panel {
+    float: left;
+    width: calc(100%/3);
+    padding : 0 10px;
+    box-sizing: border-box;
+}
+
+.main-pics {
+    position: relative;
+}
+
+.main-pics img {
+    height: 210px;
+    width: 305px;
+}
+
+.main-pics  > div {
+    position   : absolute;                   /* 親要素からの絶対位置 */
+    box-sizing : border-box;
+    white-space: nowrap;                     /* 折返しなし */
+    width      : 100%;                       /* 親要素の幅に合わせる */
+    display        : inline-block;
+    color          : #ffffff;            /* 文字の色 */
+    letter-spacing : 4px;                /* 文字間 */
+    text-shadow    : 
+                    2px  2px 3px #444,
+                    -2px  2px 3px #444,
+                    2px -2px 3px #444,
+                    -2px -2px 3px #444,
+                    2px  0px 3px #444,
+                    0px  2px 3px #444,
+                    -2px  0px 3px #444,
+                    0px -2px 3px #444;        /* 文字の影 */    
+    top        : 50%;                        /* 親要素からの上位置 */
+    left       : 0;                          /* 親要素からの左位置 */
+    text-align : center;                     /* 文字位置 */
+    transform  : translateY(-50%);           /* 文字BOXの位置ずらし */
+    padding    : 10px;                       /* BOX内の余白 */
+    font-size  : 26pt;                       /* 文字サイズ */
+    font-weight: bold;                       /* 太字 */
+    line-height: 1em;                        /* 1行の高さ */
+    opacity: 0.7;
+}
+
+.main-pics > div:hover {
+    cursor: pointer;
+}
+
+
+.age {
+    text-align: center;
+    margin: 20px auto 15px;
+    font-size: 18px;
+    padding: 15px 20px;
+    width: 300px;
+    background: #eee;
+    box-sizing: border-box;
+}
+
+/*=============================
+投稿ページ
+=============================*/
+
+/*ページ説明エリア*/
+.area-title {
+    width: 80%;
+    overflow: hidden;
+    background: #f8f8f8;
+    margin: 0 auto 60px;
+    height: 250px;
+}
+
+.area-img {
+    float:left;
+}
+
+.area-title img {
+    height: 210px;
+    width: 305px;
+    margin: 20px;
+}
+
+.area-text {
+    float:left;
+    margin-left: 20px;
+
+}
+
+.area-title h2 {
+    width: 400px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.area-text p {
+    font-size: 20px;
+    width: 280px;
+    margin: 0 auto;
+    line-height: 30px;
+
+}
+
+/*口コミ表示エリア*/
+.area-sub-title {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.area-sub-title p {
+    background: #444;
+    color: #fff;
+    padding: 10px 20px;
+    width: 180px;
+    box-sizing: border-box;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.area-board {
+    width: 80%;
+    background: #f8f8f8;
+    margin: 0 auto 80px;
+}
+
+.review-container {
+    margin: 0 20px;
+    overflow: hidden;
+}
+
+.review-container .user-name {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.review-container .avatar {
+    float: left;
+    overflow: hidden;
+}
+
+.review-container .avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.review-container .review-text {
+    float: left;
+    width: 80%;
+    background: #fff;
+    margin-left: 25px;
+    min-height: 48px;
+    position: relative;
+}
+
+.review-container .review-text .triangle {
+    position: absolute;
+    left: -25px;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 15px solid #fff;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.review-container .review-text p {
+    padding: 5px;
+}
+
+.review-container .review-favo {
+    line-height: 48px;
+}
+
+.review-container .review-favo i {
+    margin-left: 20px;
+}
+
+.review-container .review-favo i:hover {
+    cursor: pointer;
+}
+
+.review-container .review-date {
+    clear: both;
+    font-size: .5em;
+}
+
+.review-container .review-date:last-child {
+    margin-bottom: 10px;
+}
+
+.review-favo i {
+    color: #989898;
+}
+
+.review-favo .active {
+    color: #fe8a8b;
+}
+
+/*========================================
+フォーム
+========================================*/
+.form-container {
+    width: 60%;
+    margin: 0px auto;
+}
+
+.form-container h2 {
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 20px;
+    background: #444;
+    color: #fff;
+    width: 300px;
+    margin: 0 auto 50px;
+}
+
+.form {
+    font-size: 16px;
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.review-form {
+    margin-top: 0px; 
+}
+
+.form label {
+    display: block;
+}
+
+input[type='text'], input[type='password'] {
+    width: 100%;
+    margin-top: 5px;
+    padding: 20px 10px;
+    font-size: 18px;
+    border: none;
+    background: #eee;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+input[type='submit'] {
+    float: right;
+    padding: 15px 30px;
+    margin: 15px 0;
+    font-size: 18px;
+    border: none;
+    background: #444;
+    color: #fff;
+}
+
+input[type='submit']:hover {
+    border: 2px solid #444;
+    color: #444;
+    background: #fff;
+    padding: 13px 28px;
+    cursor: pointer;
+}
+
+input[type='checkbox'] {
+    width: 15px;
+    height: 15px;
+}
+
+input[type='button'] {
+    padding: 15px 30px;
+    margin: 15px 0;
+    font-size: 18px;
+    border: none;
+    background: #444;
+    color: #fff;
+}
+
+input[type='button']:hover {
+    border: 2px solid #444;
+    color: #444;
+    background: #fff;
+    padding: 13px 28px;
+    cursor: pointer;
+}
+
+.conf-message p {
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.form .button-container {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.form .button-withdraw {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form .button-withdraw input {
+    width: 150px;
+    box-sizing: border-box;
+}
+
+.form textarea {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px 10px;
+    font-size: 18px;
+    border: none;
+    background: #eee;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+.form .counter-text {
+    float: right;
+}
+
+.form .area-drop {
+    width: 200px;
+    height: 200px;
+    background: #eee;
+    border-radius: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*プロフィール画像変更用*/
+input[type='file'] {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+}
+
+/*画像*/
+.form img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+}
+
+.form .review-textarea {
+    height: 180px; 
+    padding: 10px;
+    margin-top: 0;
+}
+
+/*========================================
+マイページ
+========================================*/
+.mypage-container {
+    margin-bottom: 80px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 20px;
+    width: 90%;
+
+}
+
+.mypage-name {
+    min-width: 300px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.mypage-name span {
+    font-size: 26px;
+}
+
+.mypage-img {
+    width: 300px;
+    margin: 0 auto;
+} 
+
+
+.mypage-img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+}
+
+.mypage-overflow {
+    overflow: hidden;
+    margin: 0;
+}
+
+.mypage-edit a, .mypage-withdraw a {
+    background: #444;
+    float: right;
+    width: 220px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.mypage-edit a:hover , .mypage-withdraw a:hover {
+    color: #444;
+    background: #fff;
+    border: 2px solid #444;
+    padding: 13px 18px;
+}
+
+.mypage-info {
+    border: 2px solid #444;
+    height: 150px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.mypage-info p {
+    padding: 5px;
+}
+
+/*タブ*/
+.mypage-tab {
+    overflow: hidden;
+    margin: 0 ;
+    padding: 0;
+}
+
+.mypage-tab li {
+    float: left;
+    list-style: none;
+    border: 2px solid #444;
+    padding: 10px 20px;
+    margin-bottom: -2px;
+}
+
+.mypage-tab li:hover {
+    cursor: pointer;
+}
+
+/*選択中のタブメニューの見た目*/
+.mypage-tab li.active {
+    background: #444;
+    color: #fff;
+}
+
+.mypage-area {
+    margin-bottom: 50px;
+    border: 2px solid #444;
+    background: #f8f8f8;
+
+}
+
+.mypage-area section {
+    display:none;
+    font-size:16px;
+}
+
+.mypage-area section.show {
+    display: block;
+    margin: 10px auto;
+}
+
+/*========================================
+マイページ　自分の投稿表示
+========================================*/
+
+.myreview-container {
+    margin: 0 20px 0 40px;
+    overflow: hidden;
+}
+
+.myreview-container .user-name {
+    padding-left: 20px;
+    margin: 10px 0 5px 0;
+    text-align: left;
+}
+
+.myreview-container .avatar {
+    float: left;
+    overflow: hidden;
+}
+
+.myreview-container .avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.myreview-container .myreview-text {
+    float: left;
+    width: 80%;
+    background: #fff;
+    margin-left: 25px;
+    min-height: 48px;
+    position: relative;
+    text-align: left;
+}
+
+.myreview-container .myreview-text .triangle {
+    position: absolute;
+    left: -25px;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 15px solid #fff;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.myreview-container .myreview-text p {
+    padding: 5px;
+}
+
+
+.myreview-container .myreview-date {
+    clear: both;
+    font-size: .5em;
+    text-align: left;
+}
+
+.myreview-container .myreview-date:last-child {
+    margin-bottom: 10px;
+}
+
+/*========================================
+マイページ　お気に入り表示
+========================================*/
+
+.favorite-container {
+    margin: 0 20px 0 40px;
+    overflow: hidden;
+}
+
+.favorite-container .user-name {
+    padding-left: 20px;
+    margin: 10px 0 5px 0;
+    text-align: left;
+}
+
+.favorite-container .avatar {
+    float: left;
+    overflow: hidden;
+}
+
+.favorite-container .avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.favorite-container .favorite-text {
+    float: left;
+    width: 80%;
+    background: #fff;
+    margin-left: 25px;
+    min-height: 48px;
+    position: relative;
+    text-align: left;
+}
+
+.favorite-container .favorite-text .triangle {
+    position: absolute;
+    left: -25px;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 15px solid #fff;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.favorite-container .favorite-text p {
+    padding: 5px;
+}
+
+
+.favorite-container .favorite-date {
+    clear: both;
+    font-size: .5em;
+    text-align: left;
+}
+
+.favorite-container .favorite-date:last-child {
+    margin-bottom: 10px;
+}
+
+
+/*========================================
+バリデーションエラー時
+========================================*/
+.err > input {
+    background: #ffcccc;
+}
+
+.error-message {
+    margin: 5px 0 30px 0;
+    color: #ff4500;
+}
+
+.common-message {
+    width: 550px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.review-form > .error-message {
+    margin: 0;
+}
+
+
+/*========================================
+フッター
+========================================*/
+
+footer {
+    padding: 15px;
+    width: 100%;
+    background: #333;
+    color: #f6f5f5;
+    text-align: center;
+    font-size: 12px;
+}
+
+footer a {
+    color: #f6f5f5;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.msg-slide {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background: rgba(68, 68, 68, 0.6);
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+}
