@@ -1,0 +1,528 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*======================================================*/
+
+body {
+    color: #444;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #444;
+}
+
+a:hover {
+    font-weight: bold;
+    color: #00a1e9;
+}
+
+
+/*ヘッダー*/
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 80px;
+    background: #f9f9f9;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    z-index: 10;
+}
+
+.header_title {
+    width:40%;
+    text-align: center;
+    float: left;
+    height: 100%;
+    line-height: 80px;
+    font-size: 20px;
+}
+
+.header_nav {
+    width: 60%;
+    float: right;
+}
+
+.header_nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 100%;
+    line-height: 80px;
+}
+
+.header_nav li {
+    margin-right: 30px;
+}
+
+.header_nav li:last-child {
+    margin-right: 100px;
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        overflow: unset;
+    }
+
+    .header_title {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        display: block;
+        float: none;
+    }
+
+    .header_nav {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        float: none;
+        display: block;
+    }
+
+    .header_nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        line-height: 40px;
+        height: 40px;
+    }
+
+    .header_nav li {
+        margin: 0;
+    }
+    .header_nav li:last-child {
+        margin: 0;
+    }
+    
+}
+
+/*======================================================*/
+
+/*メインビジュアル*/
+
+.main-visual {
+    width: 100%;
+    max-width: 1200px;
+    margin: 80px auto 0;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+}
+
+.main-visual_img {
+    width: 40%;
+}
+
+.main-visual_img img {
+    height: 400px;
+    width: 100%;
+}
+
+.main-visual_greeting {
+    width: 60%;
+}
+
+.greeting-container {
+    text-align: center;
+    width: 90%;
+    height: 200px;
+    background:#f9f9f9;
+    margin: 100px auto;
+    border: 3px solid #999;
+}
+
+.greeting-1  {
+    width: 40%;
+    background  : linear-gradient(271deg, #a0d8ef, #00a1e9, #006eb0);     color: #fff;
+    padding: 10px;
+    margin: 50px auto 0;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+
+    .main-visual {
+        height: 400px;
+    }
+    .greeting-1 {
+        width: 50%;
+    }
+}
+
+.greeting-2{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .main-visual {
+        display: block;
+    }
+    .main-visual_img {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .main-visual_greeting {
+        width: 100%;
+        margin: 0 auto;
+        position: absolute;
+        top: 80px;
+        background: rgb(249, 249, 249, 0.8);
+
+    }
+
+}
+
+/*======================================================*/
+
+/*main*/
+
+.main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto ;
+    padding: 50px 0 0;
+    text-align: center;
+}
+
+.main h2 {
+    font-size: 20px;
+    font-weight: bold;
+    background  : linear-gradient(271deg, #a0d8ef, #00a1e9, #006eb0);     color: #fff;
+    padding: 10px 20px;
+    width: 15%;
+    margin: 0 auto 5px;
+}
+
+.main-container {
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 767px) {
+    .main h2 {
+        width: 40%;
+    }
+}
+
+/*======================================================*/
+
+/*Introdcction*/
+.introduction {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+}
+
+.introduction-box-1 {
+    width: 50%;
+}
+
+.introduction-box-1 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    margin-bottom: 20px;
+}
+
+.introduction-box-1 p {
+    margin-bottom: 10px;
+}
+
+.introduction-box-1 > .twitter a {
+    color: rgb(29, 161, 242);
+}
+
+.introduction-box-1 > .github a {
+    color: #24292e
+}
+
+.introduction-box-1 > .qiita a {
+    color: #55c500;
+}
+
+.introduction-box-1 i {
+    margin-right: 5px;
+}
+
+
+.introduction-box-2 {
+    width: 50%;
+    text-align: left;
+}
+
+.introduction-box-2 ul {
+    margin: 30px auto 30px 50px;
+}
+
+.introduction-box-2 li {
+    margin: 10px auto 10px 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .introduction {
+        height: 800px;
+    }
+
+    .introduction {
+        display: block;
+    }
+    .introduction-box-1 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .introduction-box-2 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .introduction-box-2 ul {
+        margin: 0 auto 30px 10px;
+    }
+
+    .introduction-box-2 ul:first-child {
+        margin-top: 50px;
+    }
+
+    .introduction-box-2 li {
+        margin-left: 0;
+    }
+}
+
+
+/*======================================================*/
+
+/*skills*/
+.skills {
+    background: #f9f9f9;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 60%;
+    margin: 60px auto 0;
+}
+
+.skills-box {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    background: #fff;
+    margin-bottom: 40px;
+    line-height: 200px;
+    border: 2px solid #00a1e9;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+    .skills-container {
+        width: 80%;
+    }
+    .skills-box {
+        width: 150px;
+        height: 150px;
+        border-radius: 150px;
+        line-height: 150px;
+        font-size: 24px;
+    }
+}
+
+/*======================================================*/
+
+/*Appeal Point*/
+
+.appealpoint {
+    margin-bottom: 50px;
+}
+
+.appeal-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 60px auto 0;
+}
+
+.appeal-box {
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    background: #00a1e9;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.appeal-topic {
+    margin: 100px auto 30px;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+@media screen and (max-width: 767px) {
+    .appeal-container {
+        height: 1020px;
+    }
+}
+
+/*======================================================*/
+
+/*フッター*/
+
+.footer {
+    background: #444;
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer p {
+    padding-top: 10px;
+}
+
+.footer a {
+    color: #fff;
+}
+
+/*======================================================*/
+
+/*スクロール用ボタン*/
+
+.page-top {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background: #f9f9f9;
+    border: 2px solid #00a1e9;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    display: none;
+}
+
+.page-top i {
+    line-height: 60px;
+    text-align: center;
+    margin-left: 23px;
+}
+
+@media screen and (max-width: 767px) {
+    .page-top {
+        position: fixed;
+        bottom: 80px;
+        right: 30px;
+    
+    }
+}
